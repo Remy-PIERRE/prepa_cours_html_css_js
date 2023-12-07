@@ -1,0 +1,84 @@
+				-- INTRODUCTION --
+
+
+	=> objectif 
+
+Le monde de l'informatique et du web évolue rapidement. Il convient de se documenter en continue pour suivre les évolutions du domaine.
+
+=> qui décide de ces évolutions et comment sont-elles intégrées?
+
+
+			- Rappel sur les évolutions de HTML et CSS depuis 20 ans 
+
+	INTRO
+
+Début des années 2000, le monde du numérique entre dans l'ère du web 2.0 (web participatif) = démocratisation du web.
+- apparition des réseaux sociaux
+- web statique à web social (partage et échange d'informations)
+- début de la création de particulier à particulier
+
+
+	INTERNAUTE
+
+Avec la simplification de l'utilisation du web, les internautes peuvent maintenant s'investir dans la création des contenues
+- démocratisation de la possession d'un ordinateur 
+- le web se centre sur l'utilisateur plutot que sur le produit
+- apparition de blogs, forum et wiki gérés par les utilisateurs
+
+	DEVELOPPEUR
+
+- complexification des structures internes pour répondre aux besoin grandissants en interactivité
+- généralisation des technologies AJAX (asynchronous JavaScript and XML) (= effectuer des requêtes vers les serveurs sans recharger la page)
+
+	CONCLUSION
+
+En une trentaine d’années, Internet est passé du web statique à un web ultra-personnalisé.
+Son évolution utilisation augmente expodentiellement.
+Les technologies associées aussi pour suivre le besoin croissant. 
+Il devient necessaire de standardiser les pratiques et les technologies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				-- SOURCES --
+
+https://www.pierre-giraud.com/html-css-apprendre-coder-cours/evolution-langage-web/
+
+https://www.preferendum.fr/blog/web-1.0-2.0-3.0-l-evolution-d-internet-et-son-impact-sur-le-marketing-digital#:~:text=Le%20Web%202.0%20%3A%20d%C3%A9mocratisation%20de,le%20particulier%20vers%20le%20particulier.
+
+
+

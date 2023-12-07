@@ -1,0 +1,113 @@
+https://www.ambient-it.net/formation/html-css-js/
+
+INTRODUCTION
+Rappel sur les évolutions de HTML et CSS depuis 20 ans
+Le processus de normalisation : le W3C et le WHATWG
+Les apports de HTML5, CSS4 et JavaScript
+ 
+
+LES FONDAMENTAUX
+La syntaxe HTML
+Le nouveau Doctype
+Encodage des caractères
+Le support navigateur
+Créer un template de base réutilisable pour tous les projets
+ 
+
+HTML5 : STRUCTURER UN DOCUMENT
+Évolution de l’imbrication des balises : disparition des notions de inline et block
+Les nouvelles balises : header, footer, structure, aside, nav, hgroup, etc.
+Les balises obsolètes : center, font, frame, acronym, etc.
+Structurer une page avec les nouvelles balises
+ 
+
+LES FORMULAIRES
+Les nouveaux champs de formulaire et leur structure
+Les nouvelles pseudo-class CSS (valid, invalid, checked…)
+Créer un formulaire de contact type
+Accessibilité des éléments dynamique (ARIA)
+ 
+
+LE MULTIMÉDIA
+La balise video
+La balise audio
+le ShadowDom
+Les balises object, embed et svg
+Conteneur (MP4, OGG, WEBM) et codec (.h264, Vorbis, Theora, VP8…)
+Inclure une vidéo dans une page et créer une interface de contrôle personnalisée
+ 
+
+GRAPHIQUE ET DESSIN
+La balise canvas
+SVG et ses filtres
+WebGL
+Créer un graphique
+ 
+
+API JAVASCRIPT
+Extension du DOM : getElementByClassName, querySelector, contenteditable
+Les WebWorkers
+Drag n’ Drop
+Gestion des fichiers et de l’historique
+Communication bi-directionnelle asynchrone (WebSocket)
+Stockage de données (côté client)
+Web Storage (sessionStorage et localStorage) et IndexedDB
+appcache: Fonctionnement déconnecté
+Géolocalisation
+Device API et Web API
+Créer une liste d’articles fonctionnant sans connexion
+ 
+
+LA MOBILITÉ AVEC HTML5
+Stockage permanent et stockage dans la session
+Utilisation d’une base de données en HTML 5
+Cartes (Google & Bing Maps)
+Utiliser la localisation en HTML 5
+Intégrer une carte Maps
+Utiliser le multitouch
+ 
+
+CSS3: INTRODUCTION & SELECTOR
+Les préfixes
+Cascade et compatibilité
+Rappel sur les sélecteurs
+Les nouveaux sélecteurs CSS3
+Les nouvelles pseudo-class CSS3 (last-child, nth-child, nth-of-type, not…)
+ 
+
+MISE EN FORME
+Fonction calc() et propriété box-sizing
+Mise en forme tabulaire et multi-colonnes
+Le modèle de boite flexible
+Les modèle de mise en page CSS
+La mise en page en grille CSS
+Mise en forme d’un modèle de site vitrine
+ 
+
+RESPONSIVE WEB DESIGN
+Les bonnes pratiques du Responsive Web Design
+Adaptabilité des pages et web application
+Frameworks et librairies : iUi, Less, FitVids, Modernizr, Angular2…
+Adaptabilité du contenu et du contenant
+Le viewport
+Créer une page adaptive
+ 
+
+HABILLAGE
+Couleurs et polices de caractères
+Coins arrondis, Ombres portés, Dégradé de couleurs
+Bordures en images
+Fonds multiples
+Transformations 2D et 3D
+Génération de contenu
+Les tooltips
+ 
+
+ANIMATION
+Les transitions
+Les animations
+Menu de navigation animé
+ 
+
+BONUS
+Présentation de Bootstrap, le framework cadriciel de Twitter
