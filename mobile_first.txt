@@ -12,7 +12,7 @@
 
 	
 			- Les standards HTML, CSS
-(API, sélécteurs, ...)
+(API, sélecteurs, ...)
 
 
 
@@ -24,11 +24,11 @@
 
 
 
-				-- Concéption d'une IHM:démarche --
+				-- Conception d'une IHM :démarche --
 
 IHM = Interface Homme Machine = ergonomie
-C'est l'ensemble des dispositifs qui permettent à l'utilisateur d'intéragir avec une machine.
-L'utilisateur doit réaliser ses taches
+C'est l'ensemble des dispositifs qui permet à l'utilisateur d'interagir avec une machine.
+L'utilisateur doit réaliser ses tâches
 	=> efficacement
 	=> en sécurité
 	=> avec plaisir
@@ -43,12 +43,12 @@ L'utilisateur doit réaliser ses taches
 
 Le web ne se limite plus aux ordinateurs de bureaux car tablettes et mobiles sont de plus en plus utilisés.
 
-* image => digital-report-july-2022-mobile-web-trafic	(graph comparatif utilisation mob/tab/desk)
+* image => digital-report-july-2022-mobile-web-trafic	(graph comparatif utilisation mob / tab / desk)
 * https://wearesocial.com/fr/blog/2022/01/digital-2022-une-nouvelle-annee-de-croissance-exceptionnelle/	(étude utilisation mobile)
 
-La diversification des supports (le mobile intègre sans cesse de nouveaux formats d'écran) rend l'idée de créer différentes version d'une page web s'adaptant aux standards du moment obselète => responsiv web design
+La diversification des supports (le mobile intègre sans cesse de nouveaux formats d'écran) rend l'idée de créer différentes versions d'une page web s'adaptant aux standards du moment obsolète => responsive web design
 
-Le responsive webdesign (ou site web adaptatif) repose sur les principes suivants:
+Le responsive web design (ou site web adaptatif) repose sur les principes suivants:
 	=> media query
 	=> grille fluide
 	=> redimension des images
@@ -57,15 +57,16 @@ Le terme de « Responsive Web Design » a été cité pour la première fois par
 * Ethan Marcotte, auteur de "Responsive web design".
 * https://ethanmarcotte.com/	(portfolio Ethan Marcotte)
 
-C'est en 2015 que Google enregistre pour la 1iere fois d'avantage de trafic sur mobile que sur ordinateur.
+C'est en 2015 que Google enregistre pour la 1ère fois davantage de trafic sur mobile que sur ordinateur.
 En découle la stratégie "mobile first" = les sites sont maintenant créés d'abord pour mobile qui est devenu la priorité, puis l'affichage est adapté graduellement pour correspondre aux formats plus grands.
+Il est plus simple d'adapter un nouveau contenant à un contenu réduit plutôt que d'adapter un contenu à un nouveau contenant plus petit.
 	=> performances pour tous les supports 
 		- suppression du superflux / concentration sur l'essentiel
 		- réduction du code source (et donc du JS)
 	=> accès rapide aux informations
-		- contenue clair et facile à lire
+		- contenu clair et facile à lire
 	=> amélioration du référencement
-		- google favorise le contenu responsive
+		- Google favorise le contenu responsive
 	=> réduction du temps de production
 		- 1 seule structure HTML pour alimenter tous les supports
 
@@ -79,12 +80,12 @@ Un document numérique est un ensemble de données organisé autour d’une stru
 * https://archivesic.ccsd.cnrs.fr/sic_00001115/document	(« Le document comme contenant, contenu et médium. Les reformulations du numérique »
 * Alain Nossereau – Education Nationale – 10/11/2004 )
 
-Le contenant est la structure du document ou page web, directement impactée par le media l'affichant (mob/tab/desk).
+Le contenant est la structure du document ou page web, directement impactée par le media l'affichant (mob / tab / desk).
 On y place donc:
-	=> le media
+	=> le média
 	=> le balisage HTML
 
-Le contenu est l'ensemble des données présentés sur la page, la raison d'être de cette dernière.
+Le contenu est l'ensemble des données présenté sur la page, la raison d'être de cette dernière.
 	=> texte
 	=> images / videos
 	=> son
@@ -97,37 +98,76 @@ Le contenue ne change pas, c'est la disposition de ces éléments qui varie en f
 ex.: https://www.wwf.fr/
 
 	=> versions distinctes
-Le contenue peut varier en fonction du média utilisé: en effet, on ne consulte pas un site internet pour les mêmes raison ou dans le même contexte selon que l'on utilise un ordinateur ou un téléphone portable.  
+Le contenu peut varier en fonction du média utilisé : en effet, on ne consulte pas un site internet pour les mêmes raisons ou dans le même contexte selon que l'on utilise un ordinateur ou un téléphone portable.  
 ex.: Google
 
-Dans les 2 cas, le contenant est au service du contenue, il doit s'y adapter.
+Dans les 2 cas, le contenant est au service du contenu, il doit s'y adapter.
 
-Il convient de préciser que le responsive s'adapte mal aux interactions complexes:
+Il convient de préciser que le responsive s'adapte mal aux interactions complexes :
 	=> formulaires
 	=> multi séléction
 	=> processus par étape
 	=> info bulle sur ordinateur / page séparée sur mobile
-Il est donc parfois préférable de favariser une concéption "séparée" plutôt que totalement responsive.
-Néanmoins, les ajustements pour chaque version seront faits grace au responsive (différentes taille / résolution mobile / ecran bureau,etc ...)
+Il est donc parfois préférable de favoriser une conception "séparée" plutôt que totalement responsive.
+Néanmoins, les ajustements pour chaque version seront faits grâce au responsive (différentes taille / résolution mobile / écran bureau, etc ...)
 
-* https://www.usabilis.com/responsive-webdesign-adapter-resolutions/	(article responsive solution à toutes les problématiques ?)
+*** https://www.usabilis.com/responsive-webdesign-adapter-resolutions/	(todo - responsive solution à toutes les problématiques ?)
+
+
 
 
 
 			- Approche paysage / portrait, tactile, impact sur l'ergonomie
 
-Le passage d'une application web du bureau vers le mobile soulève plusieurs problématiques:
-	=> espace d'affichage réduit, passage du format paysage à portrait empèche l'utilisation de contenu large ou réduit fortement la lisibilité
-	=> absence des périphérique 
-		- clavier (pas de raccourcis ou combinaison de touches, taille réduite = + fautes de saisies)
-		- souris = utilisation exclusivedu tactile (perte de précision, pas d'interaction au survol)
-	=> accès au réseau réduit selon l'endroit de consultation qui limite la quantité d'informations à charger
+Le passage d'une application web du bureau vers le mobile soulève plusieurs problématiques :
+	=> espace d'affichage réduit, passage du format paysage à portrait empêche l'utilisation de contenu large ou réduit fortement la lisibilité (éviter le défilement horizontal), l'utilisation d'image en arrière-plan rend le contenu difficiliement lisible
+	=> absence des périphériques 
+		- clavier (pas de raccourcis ou combinaisons de touches, taille réduite = difficultés pour saisies)
+		- souris = utilisation exclusive du tactile (perte de précision, pas d'interaction au survol)
+	=> accès au réseau réduit selon l'endroit de consultation qui limite la quantité d'informations à charger (images haute résolution, saisies et formulaires trop nombreux, rafraîchissement automatique)
+
+- Il est possible de passer du format portrait à paysage en tournant le mobile sur le côté => à prendre en compte lors de la conception (attention à la taille du texte dans cette situation).
+
+- Le "clic" en tactile est moins précis qu'avec une souris et les indications au survol ne sont pas disponibles => les élements clicables doivent être clairement indiqués et suffisament gros.
+
+- L'écran est plus petit => éviter les textes trops longs, les informations inutiles, la disposition en colonnes.
+
+- Le clavier sur mobile est contraingnant à utiliser => limiter les saisies au maximum, préremplir le texte quand cela est possible ou utiliser des listes. 
+
+- Les manipulations sont plus difficiles => utiliser des composants mobile.
+
+- Le risque d'erreur de la part de l'utilisateur est plus important => vérification / confirmation des actions.
+
+- Le manque de d'espace d'affichage perd facilement l'utilisateur => indiquer toujours clairement où il se situe (menu fixe, fil d'ariane).
+
+- Le mobile est l'outil privilégié pour les personnes en situation de handicap => assurer une accessibilité de qualité, éviter le "tout son" ou "tout image".
+
+- Le mobile peut être utilisé dans des lieux où il n'est pas possible de mettre du son (transports...) => prévoir la possibilité de naviguer en mode "dégradé".
+
+* https://perso.liris.cnrs.fr/stephanie.jean-daubias/enseignement/IHM/LifIHM-CM9-ErgoMobile.pdf		(liste de conseils sur l'ergonomie en mobile)
 
 
 
 
 
 			- Plan de tests
+
+Un plan de test est un document décrivant la stratégie qui sera suivie pour tester une application. Il permet de structurer l’approche de test, de définir les objectifs de test et de déterminer les méthodes et ressources qui seront utilisées pour atteindre ces objectifs.
+
+* https://www.all4test.fr/blog-du-testeur/plan-de-test/
+
+Il comprend :
+	=> les objectifs de test = ce qu'il faut vérifier
+	=> la portée des tests = ce qui sera / ne sera pas testé
+	=> le calendrier des activités à effectuer
+
+Le plan doit répertorier les risques et les évaluer pour pouvoir hiérarchiser et prioriser les tests à réaliser.
+Il doit aussi définir les ressources necessaires à sa réalisation (humaines et techniques).
+
+* image => one page test plan
+* image => exemple de plan sous forme de tableau
+
+*** https://www.cloudnetcare.fr/2018/07/19/tests-incontournables-application-mobile/	(todo - plan de test mobile)
 
 	
 
@@ -136,7 +176,35 @@ Le passage d'une application web du bureau vers le mobile soulève plusieurs pro
 			- Différence entre design web et mobile
 
 
+En conclusion, il existe plusieurs strategies pour adapter le web au média mobile qui a pris l'avantage depuis quelques années:
 
+	=> site entièrement responsive
+
+		+ 1 seul site pour tous les supports
+		+ moins cher à produire, plus simple à maintenir
+		+ une expérience utilisateur similaire peu importe le support
+
+		- performances moindres
+		- mise en place plus complexe, il faut répondre aux besoins de tout type d'utilisateur en toutes circonstances
+
+
+	=> site version mobile
+
+		+ performances
+		+ réferencement
+		+ site parfaitement adapté aux besoins du public ciblé
+
+		- nécessité de maintenir les différentes versions du site
+
+
+bonus   => application mobile
+		+ performances ++
+		+ utilisations des fonctionnalités mobiles
+		+ possibilité de hors ligne
+		+ monétisation
+
+		- prix de production
+		- une application par OS (sauf Java)
 
 
 
@@ -151,13 +219,15 @@ Le passage d'une application web du bureau vers le mobile soulève plusieurs pro
 
 
 
-			- Concéption classique vs concéption avec grille
+
+
+			- Conception classique vs conception avec grille
 
 
 
 
 
-			- Importancedes blocs
+			- Importance des blocs
 
 
 
@@ -169,7 +239,7 @@ Le passage d'une application web du bureau vers le mobile soulève plusieurs pro
 
 
 
-			- Principedes box, layout avec CSS3
+			- Principe des box, layout avec CSS3
 
 
 
