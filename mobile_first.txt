@@ -35,6 +35,8 @@ L'utilisateur doit réaliser ses tâches
 
 * https://www.maxicours.com/se/cours/la-conception-d-une-ihm/	(concéption IHM objet connecté)
 
+* https://lagrandeourse.design/blog/conception-dinterface-avec-la-grille-de-8-points/	(concept UX grille 8 points) ???
+
 
 
 
@@ -168,6 +170,9 @@ Il doit aussi définir les ressources necessaires à sa réalisation (humaines e
 * image => exemple de plan sous forme de tableau
 
 *** https://www.cloudnetcare.fr/2018/07/19/tests-incontournables-application-mobile/	(todo - plan de test mobile)
+*** https://www.all4test.fr/blog-du-testeur/tutoriel-sur-les-tests-dapplications-quest-ce-que-cest-comment-le-faire-les-outils/	(test principaux)
+
+Il s'agit de vérifier que tout le contenu soit bien présent et accessible et que les fonctionnalités agissent comme attendu pour n'importe quel support avec n'importequel navigateur.
 
 	
 
@@ -215,9 +220,28 @@ bonus   => application mobile
 
 				-- Grille flexible, fluide: principe
 
-* https://www.lahautesociete.com/blog/la-grille-en-webdesign/
+
+Il existe différents modeles de disposition:
+
+	=> boite flexible = flexbox
+
+		- utilisation simple
+		- fonctionne très bien pour une disposition en 1 dimension
+		- peut être utilisé pour une disposition en 2 dimensions
+		- prend tout l'espace disponible
+		- reparti les éléments de façon équitable dans l'espace disponible
+		- l'espace utilisé est fonction du contenu 
+
+* https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Flexbox	(utilisation de flexbox)
 
 
+	=> grille flexible = grid
+
+		- utilisation simple bien que moins évidente que les flexbox
+		- fonctionne pour les dispositions en 1 ou 2 dimensions
+		- l'espace disponible pour les contenus est déterminé par la grille
+
+* https://developer.mozilla.org/fr/docs/Web/CSS/CSS_grid_layout/Relationship_of_grid_layout_with_other_layout_methods	(utilisation de grid)
 
 
 
@@ -229,11 +253,24 @@ bonus   => application mobile
 
 			- Importance des blocs
 
+*** https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model 	(les models de boite en css)
+
 
 
 
 
 			- Points de rupture
+
+Les requêtes média (media queries) permettent de modifier l'apparence d'un site ou d'une application en fonction du type d'appareil (impression ou écran par exemple) et de ses caractéristiques (la résolution d'écran ou la largeur de la zone d'affichage (viewport) par exemple).
+* https://developer.mozilla.org/fr/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
+Pour faciliter l'intégration d'un site, le developpeur va fixer plusieurs break points (points de rupture) à l'avance qui correspondent aux tailles "standards" des principaux appareils sucéptibles de naviguer sur le futur site. C'est valeurs sont exprimées en "px".
+
+* https://rollingbox.com/blog/tutoriaux/responsive-design-les-breakpoints	(liste des break points principaux)
+
+Avec l'approche "mobile first", il convient de commencer par coder le css pour les largeurs d'écran les plus petites et de corriger ces régles en montant (media (min-width: --px) ) plutôt qu'en descendant.
+
+De plus, selon les situation, il peut être utile d'en ajouter d'autres à la volée pour corriger certains problèmes d'affichage localisés sans avoir à modifier la structure de cetteportion du code.
 
 
 
@@ -241,6 +278,106 @@ bonus   => application mobile
 
 			- Principe des box, layout avec CSS3
 
+
+- layout = mise en page
+C'est l'ensemble des technique qui permet de contrôler le placementdes éléments sur la page web les uns par rapport aux autres ou selon leur contenant.
+
+
+	=> cours normal
+
+C'est la disposition naturelle des éléments HTML.
+On distingue des éléments "bloc" qui prennent la largeur total de lapage et imposeaux suivant un retour à la ligne et les éléments inline qui peuvent accueillir sur lamême ligne d'autres éléments.
+L'ordre d'affichage correspond à celui instauré par le code HTML.
+
+
+On peut modifier ces caractéristiques et le comportement par défaut en utilisant la propriété CSS "display".
+Display apporte 2 propriétés supplémentaires très utiles pour façonner ladisposition de la page web.
+
+
+	=> flexbox
+
+flexbox = Flexible Box Layout Module
+facilite la disposition des éléments sur 1 dimension.
+
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/	(guide complet flexbox)
+* https://flexboxfroggy.com/#fr		(exercices flexbox)
+
+- parent:
+	=> display
+	=> flex-direction
+	=> flex-wrap
+	=> flex-flow
+	=> justify-content
+	=> align-items
+	=> align-content
+	=> gap / row-gap / column-gap
+- enfant:
+	=> order
+	=> flex-grow
+	=> flex-shrink
+	=> flex-basis
+	=> flex
+	=> align-self
+
+
+	=> grid
+
+grid = disposition en trame
+disposition bi-dimentionnelle
+
+* https://css-tricks.com/snippets/css/complete-guide-grid/ 	(guide complet sur les grid)
+
+- parent:
+	=> display
+	=> grid-template-columns
+	=> grid-template-rows
+	=> gris-template-areas
+	=> gris-template
+	=> gap / row-gap / column-gap
+	=> justify-items
+	=> align-items
+	=> place-items
+	=> justify-content
+	=> align-content
+	=> place-content
+	=> grid-auto-rows / gris-auto-columns
+	=> grid-auto-flow
+	=> grid
+- enfant:
+	=> grid-column-start / grid-column-end / grid-row-start / grid-row-end
+	=> grid-column / grid-row
+	=> grid-area
+	=> justify-self
+	=> align-self
+	=> place-self
+- special:
+	=> unit = fr
+	=> sizing = min-content / max-content / auto
+	=> repeat = repeat(nbr_repeating, size)
+	=> subgrid = inherit grid properties
+
+
+	=> position
+
+
+
+
+	=> float
+
+La majorité des usages de float sont converts par flexbox.
+Cette propriété apporte son lot d'effets de bord, complicant le code inutilement, et ne devrait plus être utilisé pour gérer la mise en page.
+Néanmoins, elle peut être utilisée pour gérer le contenu à l'interieur d'un bloc et obtenir facilement l'effet de "flotement" d'un texte autour d'une image par exemple.
+
+*** https://blog.logrocket.com/deep-dive-css-float-property/#:~:text=Nowadays%2C%20just%20don't%20use,for%20making%20complex%20page%20layouts.	(article utilisation float)
+	
+
+
+	=> tableau
+
+<table> est très peu adapté au design responsive, la grid sera dans la majorité des cas bien plus simple à mettre en place.
+Il existe des solutions mais il faudra les réserver pourdes cas très spécifique.
+
+* https://www.guyom-design.com/blog/demos/html/table-responsive-html/	(exemple simple de table responsive)
 
 
 
